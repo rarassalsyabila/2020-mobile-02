@@ -6,15 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class register extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
     }
-    public void chooseProvider(View view) {
+    public void chooseBackLog(View view) {
         Intent intent = new Intent(this, login.class);
+        startActivity(intent);
+    }
+    public void chooseLog(View view) {
+        Intent intent = new Intent(this, profile.class);
         startActivity(intent);
     }
 }
